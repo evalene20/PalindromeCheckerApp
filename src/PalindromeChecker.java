@@ -1,11 +1,19 @@
-public class PalindromeChecker {
-    public static void main (String[] args)
-    {
-        uc4_CharArrayMethod();
-    }
-    public static void uc4_CharArrayMethod() {
+import java.util.Scanner;
 
-        String input = "racecar";
+public class PalindromeChecker {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a word to check: ");
+        String input = scanner.nextLine();
+
+        uc4_CharArrayMethod(input);
+
+        scanner.close();
+    }
+
+    public static void uc4_CharArrayMethod(String input) {
+
         char[] chars = input.toCharArray();
 
         int start = 0;
@@ -26,6 +34,5 @@ public class PalindromeChecker {
         System.out.println("UC4: Character Array Based Palindrome Check");
         System.out.println("Input : " + input);
         System.out.println("Is Palindrome? : " + isPalindrome);
-        System.out.println();
     }
 }
