@@ -1,26 +1,24 @@
-import java.util.Scanner;
 
 public class PalindromeChecker {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
+        String a= "madam";
+        char[] b= a.toCharArray();
+        int l= a.length();
+        boolean flag = false;
+        for(int i=0; i<l/2;i++)
+        {
+            if(b[i]==b[l-i])
+                flag= true;
+            else
+                flag= false;
 
-        Scanner sc = new Scanner(System.in);
-        String a = sc.nextLine();
-
-        int i = 0;
-        int l = a.length();
-        boolean flag = true;
-
-        while (i < l / 2) {
-            if (a.charAt(i) != a.charAt(l - i - 1)) {
-                flag = false;
-                break;
-            }
-            i++;
         }
-
-        if (flag)
-            System.out.println("Is a Palindrome");
+        if (flag==true)
+            System.out.println("String is Palindrome");
         else
             System.out.println("Not a Palindrome");
+
+
     }
 }
