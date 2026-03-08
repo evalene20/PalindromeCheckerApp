@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class PalindromeChecker {
+public class UseCase5PalindromeCheckerApp {
     public static boolean isPalindromeUsingStack(String str) {
         Stack<Character> stack = new Stack();
         str = str.toLowerCase().replaceAll("[^a-z0-9]", "");
