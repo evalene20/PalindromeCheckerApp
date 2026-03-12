@@ -1,26 +1,17 @@
 import java.util.Scanner;
 
-public class PalindromeChecker {
+public class PalindromeCheckerApp {
+
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        String a = sc.nextLine();
+        // Application Startup Information
+        System.out.println("=================================");
+        System.out.println("Welcome to the Palindrome Checker App");
+        System.out.println("Application Name: Palindrome Checker");
+        System.out.println("Version: 1.0");
+        System.out.println("=================================");
 
-        int i = 0;
-        int l = a.length();
-        boolean flag = true;
-
-        while (i < l / 2) {
-            if (a.charAt(i) != a.charAt(l - i - 1)) {
-                flag = false;
-                break;
-            }
-            i++;
-        }
-
-        if (flag)
-            System.out.println("Is a Palindrome");
-        else
-            System.out.println("Not a Palindrome");
+        // Program will continue to next use case
+        System.out.println("Application is ready to check palindromes...");
     }
 }
