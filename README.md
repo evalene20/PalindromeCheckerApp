@@ -1,61 +1,63 @@
-# Hotel Booking Management System  
+# PalindromeChecker App  
 **App-Based Learning Using Core Java & Data Structures**
 
 ## Overview
-The Hotel Booking Management System is a console-based application built using Core Java, designed to demonstrate how fundamental data structures and object-oriented principles are applied in real-world software systems.
+The PalindromeChecker App is a console-based Java application designed to validate whether a given string is a palindrome under different conditions.
 
-This project emphasizes practical learning by showing how theoretical concepts such as queues, sets, and maps solve real business problems like booking management, inventory tracking, and request handling.
+This project focuses on strengthening core programming fundamentals while demonstrating how basic data structures and algorithms are applied to solve real-world string processing problems.
 
 ---
 
 ## Objective
-The primary goal of this project is to bridge the gap between academic concepts and real-world application development by:
+The objective of this project is to design and implement a system that:
 
-- Applying Core Java concepts in a structured system
-- Demonstrating the role of data structures in software design
-- Building a scalable and maintainable booking system
-- Simulating real-world challenges such as concurrency and data consistency
+- Checks whether a string is a palindrome
+- Handles multiple validation conditions (case sensitivity, ignoring spaces/special characters)
+- Reinforces problem-solving using data structures
+- Builds a strong foundation in Core Java programming
 
 ---
 
 ## Key Features
 
-### 1. Fair Request Handling
-- Implements FIFO (First-In-First-Out) using queue-based structures  
-- Ensures booking requests are processed in the order they are received  
+### 1. Basic Palindrome Validation
+- Checks if a string reads the same forward and backward  
+- Example: "madam", "level"
 
-### 2. Real-Time Inventory Management
-- Tracks room availability dynamically  
-- Maintains consistency across booking and cancellation operations  
+### 2. Case-Insensitive Checking
+- Treats uppercase and lowercase letters as equal  
+- Example: "Madam" → valid palindrome  
 
-### 3. Prevention of Double Booking
-- Uses uniqueness enforcement (e.g., sets/maps)  
-- Ensures a room cannot be booked more than once for the same time slot  
+### 3. Ignoring Special Characters
+- Removes spaces and non-alphanumeric characters before validation  
+- Example: "A man, a plan, a canal: Panama"  
 
-### 4. Extensible System Design
-- Modular and object-oriented architecture  
-- Easy to extend with new features such as payment integration or UI layers  
+### 4. Multiple Approaches
+- String reversal method  
+- Two-pointer technique  
+- Stack-based approach (optional enhancement)  
 
 ---
 
 ## Learning Approach
 
-This project follows an incremental development model:
+This project follows a step-by-step enhancement model:
 
-- Each feature introduces a new concept
-- Previously learned concepts are continuously reinforced
-- Design evolves from simple implementations to more robust solutions
+- Start with simple string comparison
+- Introduce input normalization techniques
+- Apply data structures like stacks
+- Optimize using efficient algorithms (two-pointer method)
 
 ### Focus Areas
-- Core Java (Classes, Objects, Encapsulation, Inheritance)
-- Data Structures (Queue, HashMap, HashSet, List)
-- Object-Oriented Design Principles
-- Clean and Maintainable Code Practices
+- Core Java (Strings, Methods, Control Flow)
+- Data Structures (Stack, Arrays)
+- Algorithm Design (Two-pointer technique)
+- Clean and Readable Code Practices
 
 ---
 
 ## Project Structure
-<img width="473" height="205" alt="image" src="https://github.com/user-attachments/assets/37fa798c-1514-4695-97c7-d7110109c13c" />
+<img width="430" height="238" alt="image" src="https://github.com/user-attachments/assets/fb6406fd-ea4d-4678-853a-354e7bdf68ed" />
 
 
 ---
@@ -63,37 +65,35 @@ This project follows an incremental development model:
 ## Technologies Used
 
 - Java (Core Java)
-- Java Collections Framework
+- Java Collections Framework (Stack)
 - Object-Oriented Programming Principles
 
 ---
 
 ## How It Works
 
-1. Users request room bookings
-2. Requests are queued and processed sequentially
-3. System checks room availability
-4. Booking is confirmed if constraints are satisfied
-5. Inventory is updated in real time
-6. Duplicate or conflicting bookings are prevented
+1. User provides a string input
+2. System preprocesses the string (optional normalization)
+3. Different algorithms are applied to check palindrome
+4. Result is displayed as true or false
 
 ---
 
 ## Scope & Limitations
 
 - Console-based application (no graphical UI)
-- No database integration (in-memory data handling)
-- Single-user simulation (no real concurrency handling)
+- No persistent storage
+- Handles single input at a time
 
 ---
 
 ## Future Enhancements
 
-- Add database support (JDBC / Hibernate)
-- Implement REST APIs for integration
-- Build a web or mobile UI
-- Introduce multi-threading for concurrent booking handling
-- Add payment and authentication modules
+- Add GUI (Swing / JavaFX)
+- Accept multiple inputs in batch mode
+- Add performance comparison between algorithms
+- Extend to phrase and sentence-level analysis
+- Build REST API version
 
 ---
 
@@ -101,10 +101,10 @@ This project follows an incremental development model:
 
 By completing this project, you will:
 
-- Understand how data structures are used in real applications
-- Gain hands-on experience in designing scalable systems
-- Learn when and why to use specific data structures
-- Improve problem-solving and software design skills
+- Understand string manipulation in Java
+- Learn multiple approaches to solve the same problem
+- Gain experience with stacks and algorithm optimization
+- Improve logical thinking and coding efficiency
 
 ---
 
