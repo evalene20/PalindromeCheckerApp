@@ -60,8 +60,7 @@ hotel-booking-system/
 ├── src/
 │ ├── model/ # Core entities (Room, Booking, User)
 │ ├── service/ # Business logic
-│ ├── util/ # Helper classes and utilities
-│ └── main/ # Entry point of the application
+│ ├── util/ # Helper classes and utilities│ └── main/ # Entry point of the application
 │
 ├── README.md
 └── .gitignore
