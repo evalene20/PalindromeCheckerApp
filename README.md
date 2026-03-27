@@ -55,15 +55,7 @@ This project follows an incremental development model:
 ---
 
 ## Project Structure
-hotel-booking-system/
-│
-├── src/
-│ ├── model/ # Core entities (Room, Booking, User)
-│ ├── service/ # Business logic
-│ ├── util/ # Helper classes and utilities│ └── main/ # Entry point of the application
-│
-├── README.md
-└── .gitignore
+<img width="473" height="205" alt="image" src="https://github.com/user-attachments/assets/37fa798c-1514-4695-97c7-d7110109c13c" />
 
 
 ---
